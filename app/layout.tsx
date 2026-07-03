@@ -1,13 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
-
-const notoSansKr = Noto_Sans_KR({
-  subsets: ["latin", "korean"],
-  weight: ["400", "500", "700", "900"],
-  variable: "--font-noto-sans-kr",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "내 IT 부캐 찾기 | IT Worker MBTI Test",
@@ -27,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={notoSansKr.variable}>
+    <html lang="ko">
       <body className="min-h-screen bg-slate-50 text-slate-900 antialiased">
         {children}
       </body>

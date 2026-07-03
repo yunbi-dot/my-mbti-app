@@ -15,7 +15,15 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-noto-sans-kr)", "system-ui", "sans-serif"],
+        sans: [
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Apple SD Gothic Neo",
+          "Malgun Gothic",
+          "Segoe UI",
+          "Roboto",
+          "sans-serif",
+        ],
       },
       keyframes: {
         floaty: {
